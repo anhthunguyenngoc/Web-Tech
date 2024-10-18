@@ -1,0 +1,67 @@
+.ad-padding {
+    padding: 16px 12px;
+}
+
+.width-80{
+    width: 80%;
+}
+
+.w3-border {
+    border: #006d75 solid 2px !important;
+}
+
+.w3-ul li{
+    border: 0px !important;
+}
+.w3-theme-l5 {color:#000 !important; background-color:#def2f1 !important}
+.w3-theme-l2 {color:#fff !important; background-color:#7dc7c3 !important}
+.w3-theme-l1 {color:#fff !important; background-color:#006d75 !important}
+.w3-theme {color:#fff !important; background-color:#006d75 !important}
+
+.w3-cyan1 {color:#fff !important; background-color:#006d75 !important}
+.w3-cyan1:hover {color:#fff !important; background-color:#08979c !important}
+
+.w3-hover-cyan1:hover {color:#fff !important; background-color:#08979c !important}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .ad-padding {
+        padding: 16px 12px;
+    }
+
+    .width-80{
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+    .ad-padding {
+        padding: 12px 8px;
+    }
+
+    .width-80{
+        width: 100%;
+    }
+}
+
+/* Small Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ad-padding {
+        padding: 14px 10px;
+    }
+}
+
+/* Laptop/Desktop */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .ad-padding {
+        padding: 16px 12px;
+    }
+}
+
+/* Large Desktop */
+@media (min-width: 1441px) {
+    .ad-padding {
+        padding: 18px 14px;
+    }
+}

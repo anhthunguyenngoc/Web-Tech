@@ -1,0 +1,401 @@
+<html lang="en">
+  <head>
+    <title>Web tech</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f56a7411a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+      .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-theme w3-top w3-left-align w3-large"
+        style="height: 43px"
+      >
+        <a
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-cyan1 w3-large w3-theme-l1"
+          href="javascript:void(0)"
+          onclick="w3_open()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a
+          href="../index.html"
+          class="w3-bar-item w3-button w3-theme-l1 w3-hover-cyan1"
+        >
+          <img src="../images/logo.svg" alt="Logo" />
+        </a>
+        <a
+          href="../html/subject-info.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-cyan1"
+          >Thông tin môn học</a
+        >
+        <a
+          href="../html/web-tech.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-cyan1"
+          >Các công nghệ Web</a
+        >
+        <a
+          href="../html/user-info.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-cyan1"
+          >Thông tin sinh viên</a
+        >
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+      id="mySidebar"
+      style="display: none"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-right w3-xlarge w3-padding-large w3-hover-cyan1 w3-hide-large"
+        title="Close Menu"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Menu</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-cyan1" href="#article1"
+        >Thông tin cơ bản</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-cyan1" href="#article2"
+        >Kinh nghiệm làm việc với Web</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-cyan1" href="#article3"
+        >Sở thích</a
+      >
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer; display: none"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left: 250px">
+      <div id="article1" class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Thông tin cơ bản</h1>
+          <div class="w3-row">
+            <div class="w3-twothird">
+              <ul class="w3-ul">
+                <li>Họ tên: Nguyễn Ngọc Anh Thư</li>
+                <li>MSSV: 20215143</li>
+                <li>Giới tính: Nữ</li>
+                <li>Email: thu.nna215143@sis.hust.edu.vn</li>
+                <li>Lớp: Việt Nhật 01-K66</li>
+                <li>Khóa: 66</li>
+                <li>Chương trình: Công nghệ thông tin Việt-Nhật 2021</li>
+                <li>
+                  Khoa/Viện quản lý: Trường Công nghệ thông tin và Truyền thông
+                </li>
+              </ul>
+            </div>
+            <div class="w3-third">
+              <img
+                src="../images/4.jpg"
+                alt="Ảnh thông tin cơ bản"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a style="width: 100%" href="https://hust.edu.vn/" target="_blank">
+              <img
+                src="../images/dh-bach-khoa.jpg"
+                alt="Advertise"
+                style="width: 100%"
+              />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div id="article2" style="height: 36px"></div>
+      <div class="w3-row">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Kinh nghiệm làm việc với Web</h1>
+          <p>
+            Dự án 1: Nền tảng Học Trực Tuyến "EduA"
+            <br />Mô tả: EduA là một nền tảng học trực tuyến dành cho sinh viên,
+            cho phép người dùng tham gia các khóa học từ xa. Dự án bao gồm việc
+            phát triển giao diện người dùng thân thiện, tích hợp tính năng video
+            trực tuyến và quản lý khóa học. <br />Công nghệ sử dụng: HTML, CSS,
+            JavaScript, React cho frontend; Node.js và MongoDB cho backend.
+            <br />Vai trò: Thiết kế giao diện người dùng và phát triển các tính
+            năng chính của nền tảng.
+            <br />
+            <br />
+            Dự án 2: Website Thương Mại Điện Tử "ShopB"
+            <br />
+            Mô tả: ShopB là một trang web thương mại điện tử cho phép người dùng
+            mua sắm trực tuyến. Dự án bao gồm việc phát triển các trang sản
+            phẩm, giỏ hàng và thanh toán trực tuyến. <br />Công nghệ sử dụng:
+            Bootstrap cho thiết kế responsive, PHP và MySQL cho backend, cùng
+            với API thanh toán. <br />Vai trò: Xây dựng hệ thống quản lý sản
+            phẩm và giỏ hàng, cũng như tích hợp tính năng thanh toán.
+            <br />
+            <br />
+            Dự án 3: Blog Cá Nhân "TechC"
+            <br />
+            Mô tả: TechC là một blog cá nhân nơi người viết chia sẻ các bài viết
+            về công nghệ, thủ thuật lập trình và đánh giá sản phẩm. Dự án bao
+            gồm việc phát triển chức năng viết và quản lý bài viết, cũng như hệ
+            thống bình luận. <br />Công nghệ sử dụng: WordPress cho hệ thống
+            quản lý nội dung, CSS cho thiết kế và jQuery cho các tính năng tương
+            tác. <br />Vai trò: Thiết kế giao diện blog, phát triển các chức
+            năng bình luận và tối ưu hóa SEO cho các bài viết.
+          </p>
+          <div class="w3-center">
+            <img
+              class="width-80"
+              src="../images/web.png"
+              alt="Ảnh thông tin cơ bản"
+            />
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a
+              style="width: 100%"
+              href="https://www.topcv.vn/viec-lam"
+              target="_blank"
+            >
+              <img
+                src="../images/topcv.jpg"
+                alt="Advertise"
+                style="width: 100%"
+              />
+            </a>
+          </p>
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a
+              style="width: 100%"
+              href="https://www.w3schools.com/"
+              target="_blank"
+            >
+              <img src="../images/w3.png" alt="Advertise" style="width: 100%" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div id="article3" style="height: 36px"></div>
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Sở thích</h1>
+          <p>
+            Chơi Game
+            <br />
+            Chơi game là một phần không thể thiếu trong cuộc sống của tôi, và
+            hiện tại, tựa game yêu thích nhất của tôi là Honkai: Star Rail. Đây
+            là một trò chơi thể loại gacha, nơi tôi có thể thu thập và phát
+            triển các nhân vật độc đáo trong một vũ trụ đầy màu sắc và huyền bí.
+            Tôi thích khám phá các nhiệm vụ và đấu tranh với những thử thách
+            trong game. Thể loại gacha mang lại cho tôi cảm giác hồi hộp khi mở
+            các hộp quà và tìm kiếm những nhân vật hiếm.
+            <br />
+            <br />
+            Xem Phim và Đọc Manga
+            <br />Tôi là một tín đồ của thể loại hành động viễn tưởng, và cả
+            phim và manga đều là những nguồn cảm hứng lớn cho tôi. Tôi thích
+            theo dõi những câu chuyện hấp dẫn, nơi các nhân vật phải đối mặt với
+            những tình huống gay cấn và vượt qua thử thách. Những bộ phim hành
+            động viễn tưởng như Attack on Titan luôn khiến tôi hồi hộp và thỏa
+            mãn. Tương tự, tôi cũng rất yêu thích các bộ manga như Chainsaw Man,
+            nơi mà những cuộc chiến đấu không ngừng diễn ra. Cả phim và manga
+            đều mang đến cho tôi những trải nghiệm tuyệt vời và mở ra những thế
+            giới mới để khám phá.
+            <br />
+            <br />
+            Uống Trà Sữa
+            <br />Khi muốn thư giãn, không gì tuyệt vời hơn là ghé qua một quán
+            trà sữa yêu thích. Tôi thường xuyên đến Mixue và TocoToco, hai quán
+            trà sữa mà tôi rất thích. Tại Mixue, tôi thường gọi trà sữa matcha
+            với trân châu dẻo, trong khi ở TocoToco, tôi thích thử các hương vị
+            độc đáo như trà sữa trái cây. Việc thưởng thức trà sữa cùng bạn bè
+            không chỉ là một thú vui mà còn là dịp để chúng tôi trò chuyện, chia
+            sẻ những câu chuyện hài hước và tận hưởng những khoảnh khắc vui vẻ
+            bên nhau. Trà sữa đã trở thành một phần không thể thiếu trong những
+            buổi gặp gỡ của chúng tôi.
+          </p>
+          <div class="w3-center">
+            <img
+              class="width-80"
+              src="../images/so-thich.png"
+              alt="Ảnh thông tin cơ bản"
+            />
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a
+              style="width: 100%"
+              href="https://hsr.hoyoverse.com/en-us/"
+              target="_blank"
+            >
+              <img
+                src="../images/hsr.png"
+                alt="Honkai Star Rail"
+                style="width: 100%"
+              />
+            </a>
+          </p>
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a
+              style="width: 100%"
+              href="https://mixueviet.com/"
+              target="_blank"
+            >
+              <img src="../images/mixue.jpg" alt="Mixue" style="width: 100%" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-cyan1" href="#">1</a>
+          <a class="w3-button w3-hover-cyan1" href="#">2</a>
+          <a class="w3-button w3-hover-cyan1" href="#">3</a>
+          <a class="w3-button w3-hover-cyan1" href="#">4</a>
+          <a class="w3-button w3-hover-cyan1" href="#">5</a>
+          <a class="w3-button w3-hover-cyan1" href="#">»</a>
+        </div>
+      </div>
+
+      <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32 w3-row w3-center">
+          <div class="w3-third">
+            <h4>Thông Tin Liên Hệ</h4>
+
+            <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
+            <p>Điện thoại: (012) 345-6789</p>
+            <p>Email: info@website.com</p>
+          </div>
+          <div class="w3-third">
+            <h4>Liên Kết Nhanh</h4>
+
+            <p>
+              <a href="../index.html">Trang chủ</a>
+            </p>
+            <p>
+              <a href="../html/subject-info.html">Thông tin môn học</a>
+            </p>
+            <p>
+              <a href="../html/web-tech.html">Các công nghệ Web</a>
+            </p>
+            <p>
+              <a href="../html/user-info.html">Thông tin sinh viên</a>
+            </p>
+          </div>
+          <div class="w3-third">
+            <h4>Mạng Xã Hội</h4>
+
+            <p>
+              <i
+                class="fa-brands fa-square-facebook"
+                style="color: #ffffff"
+              ></i>
+              <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-square-twitter" style="color: #ffffff"></i>
+              <a target="_blank" href="https://x.com/">Twitter</a>
+            </p>
+            <p>
+              <i
+                class="fa-brands fa-square-instagram"
+                style="color: #ffffff"
+              ></i>
+              <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+            </p>
+          </div>
+        </div>
+        <div class="w3-container w3-theme-l1 w3-center">
+          <p>
+            @ Nguyễn Ngọc Anh Thư - 20215143 -
+            <a
+              href="https://github.com/anhthunguyenngoc/Web-Tech"
+              target="_blank"
+              >Web Tech</a
+            >
+          </p>
+        </div>
+      </footer>
+
+      <!-- END MAIN -->
+    </div>
+
+    <script>
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
+
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
+
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+          overlayBg.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

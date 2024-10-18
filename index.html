@@ -1,0 +1,367 @@
+<html lang="en">
+  <head>
+    <title>Web tech</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f56a7411a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Roboto", sans-serif;
+      }
+      .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div
+        class="w3-bar w3-theme w3-top w3-left-align w3-large"
+        style="height: 43px"
+      >
+        <a
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-cyan1 w3-large w3-theme-l1"
+          href="javascript:void(0)"
+          onclick="w3_open()"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="#" class="w3-bar-item w3-button w3-theme-l1 w3-hover-cyan1">
+          <img src="images/logo.svg" alt="Logo" />
+        </a>
+        <a
+          href="html/subject-info.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-cyan1"
+          >Thông tin môn học</a
+        >
+        <a
+          href="html/web-tech.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-cyan1"
+          >Các công nghệ Web</a
+        >
+        <a
+          href="html/user-info.html"
+          class="w3-bar-item w3-button w3-hide-small w3-hover-cyan1"
+          >Thông tin sinh viên</a
+        >
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left"
+      id="mySidebar"
+      style="display: none"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-right w3-xlarge w3-padding-large w3-hover-cyan1 w3-hide-large"
+        title="Close Menu"
+      >
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Menu</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-cyan1" href="#article1"
+        >Thông tin khai giảng</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-cyan1" href="#article2"
+        >Thông tin semina</a
+      >
+      <a class="w3-bar-item w3-button w3-hover-cyan1" href="#article3"
+        >Thông tin công ty quan tâm</a
+      >
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div
+      class="w3-overlay w3-hide-large"
+      onclick="w3_close()"
+      style="cursor: pointer; display: none"
+      title="close side menu"
+      id="myOverlay"
+    ></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left: 250px">
+      <div id="article1" class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Thông tin khai giảng</h1>
+          <p>
+            Ngày khai giảng: 13/09/2024
+            <br />
+            Thời gian: 14:10 - 17:30
+            <br />
+            Địa điểm: Phòng 301, Trường Công nghệ Thông tin và Truyền thông
+            <br />
+            Nội dung:
+          </p>
+          <ul>
+            <li>
+              Giới thiệu tổng quan về môn học "Công nghệ Web và dịch vụ trực
+              tuyến", bao gồm các mục tiêu học tập và nội dung sẽ được giảng dạy
+              trong suốt khóa học.
+            </li>
+            <li>
+              Trình bày các yêu cầu đối với sinh viên, bao gồm cách thức tham
+              gia lớp học, các dự án và bài tập cần thực hiện.
+            </li>
+            <li>
+              Cơ hội giao lưu và hỏi đáp với giảng viên và các bạn học viên
+              khác.
+            </li>
+          </ul>
+          <div class="w3-border">
+            <img
+              src="images/khai-giang.jpg"
+              alt="Khai giảng"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a
+              style="width: 100%"
+              href="https://sem.hust.edu.vn/tuyen-sinh-thac-sy-2023"
+              target="_blank"
+            >
+              <img
+                src="images/hustts.jpg"
+                alt="Advertise"
+                style="width: 100%"
+              />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div id="article2" style="height: 36px"></div>
+      <div class="w3-row">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Thông tin seminar</h1>
+          <p>
+            Ngày tổ chức seminar: 05/03/2024
+            <br />
+            Thời gian: 14:00 - 16:00
+            <br />
+            Địa điểm: Phòng 202, Trường Công nghệ Thông tin và Truyền thông -
+            <br />
+            Nội dung:
+          </p>
+          <ul>
+            <li>
+              Seminar sẽ tập trung vào các công nghệ web mới nhất như HTML5,
+              CSS3, JavaScript, và các framework như React, Angular. - Thảo luận
+              về xu hướng dịch vụ trực tuyến từ thương mại điện tử đến các ứng
+              dụng web phức tạp.
+            </li>
+            <li>
+              Khách mời là các chuyên gia trong lĩnh vực công nghệ thông tin,
+              chia sẻ kinh nghiệm thực tế và các dự án đã thực hiện.
+            </li>
+            <li>
+              Sinh viên có cơ hội đặt câu hỏi và nhận phản hồi trực tiếp từ các
+              chuyên gia.
+            </li>
+          </ul>
+          <div>
+            <img
+              src="images/seminar-img.jpg"
+              alt="Khai giảng"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a
+              style="width: 100%"
+              href="https://fami.hust.edu.vn/lich-seminar/"
+              target="_blank"
+            >
+              <img src="images/seminar.png" alt="Seminar" style="width: 100%" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div id="article3" style="height: 36px"></div>
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Thông tin công ty quan tâm</h1>
+
+          <div class="w3-row">
+            <div class="w3-third w3-container">
+              <img src="images/xyz.jpg" alt="XYZ" style="width: 100%" />
+            </div>
+            <div class="w3-twothird w3-container">
+              Công ty XYZ: Chuyên cung cấp giải pháp công nghệ web và dịch vụ
+              trực tuyến. Họ đang tìm kiếm thực tập sinh cho mùa hè 2024. Công
+              ty sẽ tổ chức buổi phỏng vấn tại trường vào tháng 4/2024.
+            </div>
+          </div>
+
+          <div class="w3-row">
+            <div class="w3-third w3-container">
+              <img src="images/abc.jpg" alt="ABC" style="width: 100%" />
+            </div>
+            <div class="w3-twothird w3-container">
+              Công ty ABC: Là đơn vị phát triển phần mềm, mong muốn hợp tác với
+              sinh viên để thực hiện các dự án thực tế trong môn học. Cung cấp
+              cơ hội làm việc trong môi trường chuyên nghiệp.
+            </div>
+          </div>
+
+          <div class="w3-row">
+            <div class="w3-third w3-container">
+              <img src="images/def.jpg" alt="DEF" style="width: 100%" />
+            </div>
+            <div class="w3-twothird w3-container">
+              Công ty DEF: Đơn vị tổ chức hội thảo về công nghệ thông tin, sẽ có
+              buổi tuyển dụng sinh viên vào tháng 5/2024. Cung cấp khóa đào tạo
+              ngắn hạn cho sinh viên muốn nâng cao kỹ năng.
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <p class="w3-border ad-padding w3-center">
+            ADVERTISEMENT
+            <a
+              style="width: 100%"
+              href="https://www.topcv.vn/viec-lam"
+              target="_blank"
+            >
+              <img src="images/topcv.jpg" alt="Advertise" style="width: 100%" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a class="w3-button w3-cyan1" href="#">1</a>
+          <a class="w3-button w3-hover-cyan1" href="#">2</a>
+          <a class="w3-button w3-hover-cyan1" href="#">3</a>
+          <a class="w3-button w3-hover-cyan1" href="#">4</a>
+          <a class="w3-button w3-hover-cyan1" href="#">5</a>
+          <a class="w3-button w3-hover-cyan1" href="#">»</a>
+        </div>
+      </div>
+
+      <footer id="myFooter">
+        <div class="w3-container w3-theme-l2 w3-padding-32 w3-row w3-center">
+          <div class="w3-third">
+            <h4>Thông Tin Liên Hệ</h4>
+
+            <p>Địa chỉ: 123 Đường ABC, Thành phố XYZ</p>
+            <p>Điện thoại: (012) 345-6789</p>
+            <p>Email: info@website.com</p>
+          </div>
+          <div class="w3-third">
+            <h4>Liên Kết Nhanh</h4>
+
+            <p>
+              <a href="#">Trang chủ</a>
+            </p>
+            <p>
+              <a href="html/subject-info.html">Thông tin môn học</a>
+            </p>
+            <p>
+              <a href="html/web-tech.html">Các công nghệ Web</a>
+            </p>
+            <p>
+              <a href="html/user-info.html">Thông tin sinh viên</a>
+            </p>
+          </div>
+          <div class="w3-third">
+            <h4>Mạng Xã Hội</h4>
+
+            <p>
+              <i
+                class="fa-brands fa-square-facebook"
+                style="color: #ffffff"
+              ></i>
+              <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-square-twitter" style="color: #ffffff"></i>
+              <a target="_blank" href="https://x.com/">Twitter</a>
+            </p>
+            <p>
+              <i
+                class="fa-brands fa-square-instagram"
+                style="color: #ffffff"
+              ></i>
+              <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+            </p>
+          </div>
+        </div>
+        <div class="w3-container w3-theme-l1 w3-center">
+          <p>
+            @ Nguyễn Ngọc Anh Thư - 20215143 -
+            <a
+              href="https://github.com/anhthunguyenngoc/Web-Tech"
+              target="_blank"
+              >Web Tech</a
+            >
+          </p>
+        </div>
+      </footer>
+
+      <!-- END MAIN -->
+    </div>
+
+    <script>
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
+
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
+
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+          overlayBg.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+          overlayBg.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
